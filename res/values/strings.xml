@@ -6,4 +6,16 @@
     <string name="title_activity_main">FHXAppDemo</string>
     <string name="add_button">Add</string>
 
+    <string name="instructions">Add an image. Then press on image to drag it. Drop it on the grid.</string>
+    <string name="hello">Add an image. Then drag it onto the grid.</string>
+    <string name="app_name">Drag to GridView</string>
+    <integer name="num_images">20</integer>
+    <integer name="num_columns">4</integer>
+    
+    <string-array name="about">
+        <item >George Feng</item>
+        <item >Lei He</item>
+        <item >Yuanyang Xie</item>
+    </string-array>
+
 </resources>
