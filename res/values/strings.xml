@@ -3,12 +3,11 @@
     <string name="app_name">FHXApp</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">FHXAppDemo</string>
+    <string name="title_activity_main">FHXAppActivity</string>
     <string name="add_button">Add</string>
 
     <string name="instructions">Add an image. Then press on image to drag it. Drop it on the grid.</string>
     <string name="hello">Add an image. Then drag it onto the grid.</string>
-    <string name="app_name">Drag to GridView</string>
     <integer name="num_images">20</integer>
     <integer name="num_columns">4</integer>
     

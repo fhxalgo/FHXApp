@@ -132,17 +132,17 @@ public class FHXAppMain extends Activity implements
 	 */
 
 	public void addNewImageToScreen() {
-		int resourceId = id.getAndIncrement();
+		int resourceId = id.getAndIncrement() % imageIds.length;
 
 		// int m = mImageCount % 3;
 		// if (m == 1) resourceId = R.drawable.photo1;
 		// else if (m == 2) resourceId = R.drawable.photo2;
 
-		if (resourceId >= imageIds.length) {
-			Log.i(TAG, "all words are already in add zone.");
-
-			return;
-		}
+//		if (resourceId >= imageIds.length) {
+//			Log.i(TAG, "all words are already in add zone.");
+//
+//			return;
+//		}
 
 		addNewImageToScreen(resourceId);
 	}
