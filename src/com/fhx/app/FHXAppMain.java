@@ -38,15 +38,15 @@ import android.widget.Toast;
  * 
  */
 
-public class FHXAppMain extends Activity implements
-		View.OnLongClickListener, View.OnClickListener, View.OnTouchListener // ,
-																				// AdapterView.OnItemClickListener
+public class FHXAppMain extends Activity implements View.OnLongClickListener,
+		View.OnClickListener, View.OnTouchListener // ,
+													// AdapterView.OnItemClickListener
 {
 
-	public static final String TAG = "FHXAppMain";
+	public static final String TAG = FHXAppMain.class.getSimpleName();
 
 	/**
- */
+     */
 	// Constants
 
 	private static final int HIDE_TRASHCAN_MENU_ID = Menu.FIRST;
@@ -138,11 +138,11 @@ public class FHXAppMain extends Activity implements
 		// if (m == 1) resourceId = R.drawable.photo1;
 		// else if (m == 2) resourceId = R.drawable.photo2;
 
-//		if (resourceId >= imageIds.length) {
-//			Log.i(TAG, "all words are already in add zone.");
-//
-//			return;
-//		}
+		// if (resourceId >= imageIds.length) {
+		// Log.i(TAG, "all words are already in add zone.");
+		//
+		// return;
+		// }
 
 		addNewImageToScreen(resourceId);
 	}
@@ -188,7 +188,7 @@ public class FHXAppMain extends Activity implements
 			toast("Unable to find GridView");
 		else {
 			// set view dimension
-			gridView.setNumColumns(4);
+			gridView.setNumColumns(5);
 			// R.integer.num_images = imageIds.length; // how to set # of cells?
 			gridView.setAdapter(new ImageCellAdapter(this));
 			// gridView.setOnItemClickListener (this);
