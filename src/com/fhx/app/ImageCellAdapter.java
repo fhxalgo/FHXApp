@@ -17,30 +17,33 @@ public class ImageCellAdapter extends BaseAdapter {
 	// Constants
 	public static final int DEFAULT_NUM_IMAGES = 8;
 
-	/**
- */
 	// Variables
 	public ViewGroup mParentView = null;
 	private Context mContext;
+	
+	private int imageCount = DEFAULT_NUM_IMAGES;
 
 	public ImageCellAdapter(Context c) {
 		mContext = c;
 	}
 
 	/**
- */
-	// Methods
-
-	/**
-	 * getCount
+	 * getCount: make it dynamic 
 	 */
+//	public int getCount() {
+//		Resources res = mContext.getResources();
+//		int numImages = res.getInteger(R.integer.num_images);
+//		return numImages;
+//	}
 
 	public int getCount() {
-		Resources res = mContext.getResources();
-		int numImages = res.getInteger(R.integer.num_images);
-		return numImages;
+		return imageCount;
 	}
 
+	public void setCount(int count) {
+		imageCount = count;
+	}
+	
 	public Object getItem(int position) {
 		return null;
 	}

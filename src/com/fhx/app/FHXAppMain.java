@@ -189,8 +189,11 @@ public class FHXAppMain extends Activity implements View.OnLongClickListener,
 		else {
 			// set view dimension
 			gridView.setNumColumns(5);
-			// R.integer.num_images = imageIds.length; // how to set # of cells?
-			gridView.setAdapter(new ImageCellAdapter(this));
+			ImageCellAdapter adapter = new ImageCellAdapter(this);
+			// set number of cells
+			//int numImages = getResources().getInteger(R.integer.num_images);
+			adapter.setCount(imageIds.length);
+			gridView.setAdapter(adapter);
 			// gridView.setOnItemClickListener (this);
 		}
 
